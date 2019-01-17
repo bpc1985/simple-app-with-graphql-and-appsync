@@ -13,9 +13,9 @@ Amplify.configure(config);
 
 /* Replacing suitable variables based on generated file aws-exports.js */
 const client = new ApolloClient({
-  uri: 'https://abcxyzabcxyzabcxyz.appsync-api.us-east-1.amazonaws.com/graphql',
+  uri: config.aws_appsync_graphqlEndpoint,
   headers: {
-    'X-Api-Key': 'da9-8978dasfdasfdsaas88dd'
+    "X-Api-Key": config.aws_appsync_apiKey
   }
 });
 

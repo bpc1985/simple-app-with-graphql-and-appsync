@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Connect } from 'aws-amplify-react';
+import { Connect, withAuthenticator } from 'aws-amplify-react';
 import { graphqlOperation } from 'aws-amplify';
 import { Mutation } from 'react-apollo';
 import gql from "graphql-tag";
@@ -55,4 +55,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withAuthenticator(App);

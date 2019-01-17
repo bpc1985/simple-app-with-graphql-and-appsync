@@ -47,3 +47,11 @@
 	+ Finally, waiting generated code
 
 5. Test with npm run start
+
+6. In order to add Cognito Authentication
+
+    + "amplify add auth"
+
+    + "amplify push" and choose Yes
+
+    + Finally, waiting generated code
